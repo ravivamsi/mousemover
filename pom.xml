@@ -3,6 +3,8 @@
   <groupId>com.project.devtools</groupId>
   <artifactId>RunningMouse</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  
   <name>RunningMouse</name>
   <url>https://github.com/ravivamsi/mousemover</url>
   <description>Java Archieve to jiggle the Mouse movements</description>
@@ -27,6 +29,24 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+      <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+				  <excludes>
+					<exclude>**/log4j.properties</exclude>
+				  </excludes>
+				  <archive>
+				    <manifest>
+					<addClasspath>true</addClasspath>
+					<mainClass>com.project.devtools.MouseRunner</mainClass>
+					<classpathPrefix>dependency-jars/</classpathPrefix>
+				    </manifest>
+				  </archive>
+				</configuration>
+			</plugin>
+      
+      
     </plugins>
   </build>
    <licenses>

@@ -9,6 +9,7 @@ package com.project.devtools.constants;
  */
 public class ConstantValues {
 
+	public static final int ONE_SECONDS = 1000;
 	public static final int FIVE_SECONDS = 5000;
 	public static final int TEN_SECONDS = 10000;
 	public static final int ONE_MINUTE = 60000;
