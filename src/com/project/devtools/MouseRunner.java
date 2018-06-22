@@ -4,9 +4,7 @@
 package com.project.devtools;
 
 import java.awt.MouseInfo;
-import java.awt.Point;
 import java.awt.Robot;
-import java.util.Random;
 
 import com.project.devtools.constants.ConstantValues;
 
