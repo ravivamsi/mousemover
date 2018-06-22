@@ -22,9 +22,14 @@ public class MouseRunner {
 	
 	public static void main(String... args) throws Exception {
 		
-//		String timeInMinutes = args[0];
-//		
-//		Integer time = Integer.parseInt(timeInMinutes);
+		Integer delayInMilliSec = 0;
+		if(args.length == 0 && delayInMilliSec == 0){
+			delayInMilliSec = ConstantValues.FIVE_SECONDS;
+		}else{
+			String delayInSec = args[0];
+			delayInMilliSec = Integer.parseInt(delayInSec)*1000;
+			
+		}
 		
 		
 		
@@ -35,7 +40,7 @@ public class MouseRunner {
         	
             robot.mouseMove(pointerInfo.getLocation().x,pointerInfo.getLocation().y);
             
-            Thread.sleep(ConstantValues.FIVE_SECONDS);
+            Thread.sleep(delayInMilliSec);
             
             robot.mouseMove(pointerInfo.getLocation().x-1, pointerInfo.getLocation().y-1);
             
