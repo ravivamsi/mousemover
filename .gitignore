@@ -1,6 +1,13 @@
 # Compiled class file
 *.class
 
+# Target Folder
+/target/*
+/bin/*
+
+*.settings*
+
+
 # Log file
 *.log
 
