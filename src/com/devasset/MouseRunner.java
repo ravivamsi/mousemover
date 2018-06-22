@@ -1,13 +1,13 @@
 /**
  * 
  */
-package com.project.devtools;
+package com.devasset;
 
 import java.awt.MouseInfo;
 import java.awt.PointerInfo;
 import java.awt.Robot;
 
-import com.project.devtools.constants.ConstantValues;
+import com.devasset.constants.ConstantValues;
 
 /**
  * @author Vamsi Ravi

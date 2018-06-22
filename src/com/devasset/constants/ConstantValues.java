@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.project.devtools.constants;
+package com.devasset.constants;
 
 /**
  * @author Vamsi Ravi
