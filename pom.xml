@@ -32,7 +32,8 @@
       <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
+<version>3.1.0</version>				
+<configuration>
 				  <excludes>
 					<exclude>**/log4j.properties</exclude>
 				  </excludes>
@@ -70,4 +71,7 @@
     <developerConnection>scm:git:ssh://github.com/ravivamsi/mousemover.git</developerConnection>
     <url>http://github.com/ravivamsi/mousemover/tree/master</url>
    </scm>
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 </project>
